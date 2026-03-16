@@ -2,6 +2,7 @@
 using LolCLI_V4.Models;
 using Microsoft.Win32;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -69,7 +70,7 @@ namespace LolWPF_V4
         {
             Program.Feladat1();
             dtgHosok.ItemsSource = Program.hosok;
-            cbxOszlopok.ItemsSource = new string[] { "Name", "Title", "Category", "Tag", "HP", "Attackdamage", "Attackdamageperlevel" };
+            cbxOszlopok.ItemsSource = typeof(Hos).GetProperties().Select(x => x.Name);
         }
     }
 }

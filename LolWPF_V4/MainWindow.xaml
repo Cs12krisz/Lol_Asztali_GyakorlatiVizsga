@@ -16,12 +16,12 @@
             <ComboBox 
                 x:Name="cbxOszlopok" 
                 Margin="0 0 20 0"
-                Height="20"
+                Height="25"
                 Width="150" SelectionChanged="cbxOszlopok_SelectionChanged"/>
             <Button 
                 x:Name="btReset" 
                 Content="Reset"
-                Height="20"
+                Height="25"
                 Width="100"
                 Margin="0 0 20 0" Click="btReset_Click"
                 />
@@ -29,7 +29,7 @@
                 x:Name="btMentes" 
                 Content="Mentés"
                 Width="100"
-                Height="20" Click="btMentes_Click"/>
+                Height="25" Click="btMentes_Click"/>
         </StackPanel>
         <DataGrid Grid.Row="1" x:Name="dtgHosok"></DataGrid>
     </Grid>
